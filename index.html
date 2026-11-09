@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="Портфолио практических работ по информатике. Ламин Дахмуни, группа 1-КПД-2.">
+  <title>Ламин Дахмуни | Портфолио по информатике</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="На главную">
+      <span class="brand-mark">&lt;/&gt;</span><span>LAMIN<span class="brand-dot">.</span>DEV</span>
+    </a>
+    <nav aria-label="Главная навигация">
+      <a href="#works">Работы</a><a href="#about">О портфолио</a>
+    </nav>
+    <a class="top-cta" href="#works">Смотреть работы <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> СТУДЕНЧЕСКОЕ ПОРТФОЛИО · 2026</div>
+        <h1>Учусь.<br><span>Создаю.</span><br>Развиваюсь.</h1>
+        <p class="hero-lead">Мои практические работы по информатике, учебные проекты и путь в мире технологий.</p>
+        <div class="identity">
+          <div class="avatar">ЛД</div>
+          <div><strong>Ламин Дахмуни</strong><small>Студент · группа 1-КПД-2</small></div>
+        </div>
+        <a class="primary-button" href="#works">Открыть мои работы <span>↓</span></a>
+      </div>
+      <div class="hero-art" aria-label="Декоративная иллюстрация кода">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="code-window">
+          <div class="window-head"><i></i><i></i><i></i><span>student.py</span></div>
+          <div class="code-lines">
+            <p><b>01</b> <em>student</em> = {</p>
+            <p><b>02</b> &nbsp; <label>name</label>: <strong>"Ламин"</strong>,</p>
+            <p><b>03</b> &nbsp; <label>group</label>: <strong>"1-КПД-2"</strong>,</p>
+            <p><b>04</b> &nbsp; <label>subject</label>: <strong>"Информатика"</strong></p>
+            <p><b>05</b> }</p>
+            <p class="code-gap"><b>06</b> <em>while</em> learning:</p>
+            <p><b>07</b> &nbsp; create_something()</p>
+            <p><b>08</b> &nbsp; <span class="cursor"></span></p>
+          </div>
+        </div>
+        <div class="float-chip chip-top"><span>✳</span> Практика</div>
+        <div class="float-chip chip-bottom"><span>⌘</span> Python · Web</div>
+      </div>
+      <div class="hero-foot"><span>ИНФОРМАТИКА</span><span>САНКТ-ПЕТЕРБУРГ</span><span>01 / PORTFOLIO</span></div>
+    </section>
+
+    <section class="works section" id="works">
+      <div class="section-heading">
+        <div><div class="eyebrow">МОЯ УЧЕБНАЯ РАБОТА</div><h2>Практические <span>работы</span></h2></div>
+        <p>Здесь собраны задания, решения и материалы, которые я выполняю в процессе обучения.</p>
+      </div>
+      <div class="filter-row">
+        <span class="work-count"><b id="workCount">03</b> РАБОТЫ В ПОРТФОЛИО</span>
+        <span class="filter-note">ИНФОРМАТИКА <i></i> 1-КПД-2</span>
+      </div>
+      <div class="work-grid" id="workGrid"></div>
+      <div class="upload-panel">
+        <div class="upload-icon">＋</div>
+        <div class="upload-copy"><strong>Добавить новую работу</strong><p>Выберите PDF-файл, чтобы прикрепить его к нужному заданию на этом устройстве.</p></div>
+        <label class="upload-button" for="pdfInput">Выбрать PDF <span>↗</span></label>
+        <input id="pdfInput" type="file" accept="application/pdf,.pdf" hidden>
+      </div>
+      <p class="local-note"><span>ⓘ</span> Добавленные через эту форму файлы сохраняются в этом браузере. Чтобы они стали доступны преподавателю в опубликованном сайте, поместите PDF в папку <code>files</code> и укажите путь в <code>script.js</code>. Инструкция есть в README.</p>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-card">
+        <div class="about-left"><div class="eyebrow">О МОЁМ ПОРТФОЛИО</div><h2>Каждая работа —<br><span>ещё один шаг.</span></h2></div>
+        <div class="about-right"><p>Это учебное портфолио показывает мои практические задания по информатике. Я постепенно добавляю новые работы, изучаю программирование и развиваю технические навыки.</p><div class="about-tags"><span>HTML & CSS</span><span>JavaScript</span><span>Python</span><span>Информатика</span></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">&lt;/&gt;</span><span>LAMIN<span class="brand-dot">.</span>DEV</span></a><span>Ламин Дахмуни · 1-КПД-2</span><span>Учебное портфолио · 2026</span></footer>
+
+  <dialog id="uploadDialog" class="upload-dialog">
+    <form method="dialog" class="dialog-close"><button aria-label="Закрыть">×</button></form>
+    <div class="eyebrow">ДОБАВЛЕНИЕ МАТЕРИАЛА</div>
+    <h3>К какой работе прикрепить PDF?</h3>
+    <p id="selectedFileName" class="selected-file"></p>
+    <div id="assignmentChoices" class="assignment-choices"></div>
+    <p class="dialog-hint">Файл будет доступен в этом браузере. Для публичной версии сайта используйте инструкцию в README.</p>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
